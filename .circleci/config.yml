@@ -51,26 +51,26 @@
       jobs:
         - A
         - B
-        - C:
+        - C
             requires:
               - A
-        - D:
+        - D
             requires:
               - A
               - B
-        - E:
+        - E
             requires:
               - A
-        - F:
+        - F
             requires:
               - C
-        - G:
+        - G
             requires:
               - D
-        - H:
+        - H
             requires:
               - E
               - B
-         - I:
+         - I
             requires:
               - E
