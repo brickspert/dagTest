@@ -1,46 +1,46 @@
   version: 2.1
   jobs:
-    A:
+    PA:
       docker: 
         - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
       steps:
         - run: echo "hello world" # run the `echo` command
-    B:
+    PB:
       docker: 
         - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
       steps:
         - run: echo "hello world" # run the `echo` command  
-    C:
+    PC:
       docker: 
         - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
       steps:
         - run: echo "hello world" # run the `echo` command  
-    D:
+    PD:
       docker: 
         - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
       steps:
         - run: echo "hello world" # run the `echo` command     
-    E:
+    PE:
       docker: 
         - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
       steps:
         - run: echo "hello world" # run the `echo` command  
-    F:
+    PF:
       docker: 
         - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
       steps:
         - run: echo "hello world" # run the `echo` command   
-    G:
+    PG:
       docker: 
         - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
       steps:
         - run: echo "hello world" # run the `echo` command  
-    H:
+    PH:
       docker: 
         - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
       steps:
         - run: echo "hello world" # run the `echo` command  
-    I:
+    PI:
       docker: 
         - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
       steps:
@@ -49,28 +49,28 @@
     version: 2
     AAAAAA:
       jobs:
-        - A
-        - B
-        - C:
+        - PA
+        - PB
+        - PC:
             requires:
-              - A
-        - D:
+              - PA
+        - PD:
             requires:
-              - A
-              - B
-        - E:
+              - PA
+              - PB
+        - PE:
             requires:
-              - A
-        - F:
+              - PA
+        - PF:
             requires:
-              - C
-        - G:
+              - PC
+        - PG:
             requires:
-              - D
-        - H:
+              - PD
+        - PH:
             requires:
-              - E
-              - B
-         - I:
+              - PE
+              - PB
+         - PI:
             requires:
-              - E
+              - PE
