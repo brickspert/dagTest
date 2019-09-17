@@ -71,6 +71,6 @@
             requires:
               - PE
               - PB
-         - PI:
+        - PI:
             requires:
               - PE
